@@ -1,19 +1,10 @@
-
 body{
   background-color: lightgrey
 }
 
 h1{
-  font-family: sans-serif;font-size: 38;color: #b94646; text-align: center;
-  text-shadow: 3px 3px#bb4c4c;filter: brightness(95%);
-}
-
-.img-displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  filter: sepia(30%);
+  font-family: sans-serif;font-size: 38;color: #d48d8d; text-align: center; text-shadow: 3px 3px #bb4c4c;
+  filter: brightness(95%);
 }
 
 @keyframes light {
@@ -33,6 +24,33 @@ h6{
   font-family: Tahoma;font-size: 17; color: #c97171; text-align:inherit; font-style: normal;
 
 }
+
+.img-displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  filter: sepia(30%);
+}
+
+img {
+filter: opacity(75%)sepia(40%)grayscale(10%);
+}
+
+
+.social-nav {
+    right: 10px;
+    top: 55%;
+    position: fixed;
+    z-index: 999999;
+    cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: block;
+}
+
+.wait {cursor: wait;}
 
 #navigation-bar:hover {
   background-color: lightblue;
@@ -56,24 +74,24 @@ h6{
 }
 
 form {
-  border: 2px solid #f1f1f1;
+  border: 1.5px solid #d48d8d;background-color: #E0E0E0;
 }
 
 input[type=text], input[type=password] {
-  width: 25%;
-  padding: 10px 20px;
+  width: 20%;
+  padding: 8px 8px;
   margin: 2px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #d48d8d;
   box-sizing: border-box;
 }
 
 
 button {
-  background-color: #4CAF50;
+  background-color: #d48d8d;
   color: white;
-  padding: 10px 20px;
-  margin: 3px 0;
+  padding: 8px 8px;
+  margin: 1px 0;
   border: none;
   cursor: pointer;
   width: 20%;
@@ -85,8 +103,8 @@ button:hover {
 
 .cancelbtn {
   width: auto;
-  padding: 10px 18px;
-  background-color: #b94646;
+  padding: 8px 10px;
+  background-color: #d48d8d;
 }
 
 .container {
@@ -103,6 +121,7 @@ span.psw {
     display: block;
     float: none;
   }
+
   .cancelbtn {
     width: 90%;
   }
